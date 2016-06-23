@@ -5,7 +5,7 @@ $(document).ready(function(){
 	event.preventDefault();
 	$.ajax({
 		type:"GET",
-		url:"https://maps.googleapis.com/maps/api/geocode/xml?address="+encodeURIComponent($('#address').val())+"&key=AIzaSyDrfhdgMT18DtaBy5izf8yJFUiV4p9NOKc",
+		url:"https://maps.googleapis.com/maps/api/geocode/xml?address="+encodeURIComponent($('#address').val())+"&key=***your key**",
 		dataType: "xml",
 		success:processXML,
 		error:error
